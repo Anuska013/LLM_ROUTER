@@ -1,0 +1,38 @@
+/* Custom theme colors */
+:root {
+  --primary: #6d28d9;   /* Violet */
+  --secondary: #0ea5e9; /* Sky blue */
+  --accent: #facc15;    /* Amber */
+}
+
+/* Smooth animations for all interactive elements */
+button, select, input, textarea {
+  transition: all 0.25s ease-in-out;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-app {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Fancy scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
